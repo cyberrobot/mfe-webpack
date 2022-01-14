@@ -1,0 +1,40 @@
+Arguments: 
+  /Users/yaroslavsalmin/.nvm/versions/node/v16.13.0/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js
+
+PATH: 
+  /Users/yaroslavsalmin/.nvm/versions/node/v16.13.0/bin:/usr/local/opt/mongodb-community@3.6/bin:/usr/local/opt/node@8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/yaroslavsalmin/.nvm/versions/node/v12.18.0/bin:/usr/local/opt/mongodb-community@3.6/bin:/usr/local/opt/node@8/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  16.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "concurrently \"lerna run --scope @comprehensive-demo/* --parallel start\" \"yarn serve\"",
+      "build": "lerna run --scope @comprehensive-demo/* build",
+      "serve": "lerna run --scope @comprehensive-demo/* --parallel serve",
+      "clean": "lerna run --scope @comprehensive-demo/* --parallel clean",
+      "bootstrap": "lerna bootstrap"
+    },
+    "devDependencies": {
+      "concurrently": "6.5.1",
+      "lerna": "3.22.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
